@@ -1,0 +1,157 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #0054da;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #ffffff; /* Background color for the button */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #602727; /* Darker background color on hover */
+}
+
+main {
+    padding: 20px 0;
+}
+
+main .main-article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.point-relais {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre le logo et le texte */
+}
+
+.point-relais-logo {
+    max-width: 80px;
+    height: auto;
+}
+.planning {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.planning h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.planning table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.planning table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.planning table td:first-child {
+    font-weight: bold;
+}
+
+.planning table td:last-child {
+    text-align: center;
+}
+
+.planning table tr:last-child td {
+    border-bottom: none;
+}
+
+main .secondary-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+main .secondary-articles article {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+main .secondary-articles img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    main .secondary-articles article {
+        flex: 1 1 100%;
+    }
+
+    .point-relais {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .point-relais-logo {
+        margin-bottom: 10px;
+    }
+}
